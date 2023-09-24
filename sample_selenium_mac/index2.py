@@ -34,7 +34,6 @@ def run_automation_script(row):
     lt_options["platformName"]="macOS Sonoma"
     lt_options["w3c"] = True;
     options.set_capability('LT:Options', lt_options);
-    options.set_capability('LT:Options', lt_options);
     url = "https://"+username+":"+accesskey+"@"+gridUrl
     driver = webdriver.Remote(
             command_executor=url,
