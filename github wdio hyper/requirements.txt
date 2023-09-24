@@ -1,0 +1,7 @@
+ConfigParser
+selenium>=3.14
+flake8
+autopep8
+html-testRunner
+requests
+Appium-Python-Client==1.3.0

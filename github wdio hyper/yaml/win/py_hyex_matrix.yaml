@@ -1,0 +1,42 @@
+---
+version: 0.1
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+matrix:
+  os: ["win"]  # Add "mac" and "win" to differentiate macOS and Windows
+  browser: ["chrome", "firefox","MicrosoftEdge","safari"]
+  files: ["tests/chrome.py"]
+exclusionMatrix: 
+  - os: ['win'] 
+    browser: ['safari'] 
+    files: ["tests/chrome.py"]
+
+runson: ${matrix.os}
+retryOnFailure: true
+maxRetries: 1
+
+cacheKey: '{{ checksum "requirements.txt" }}'
+cacheDirectories:
+  - CacheDir
+pre:
+  - pip3 install -r requirements.txt --cache-dir CacheDir
+
+# post:
+#   - cat yaml/win/pyunit_hyperexecute_matrix_sample.yaml
+
+# mergeArtifacts: true
+
+# uploadArtefacts:
+#   - name: TestReport1
+#     path:
+#      - example_1/**
+#   - name: TestReport2
+#     path:
+#      - example_2/**
+
+testSuites:
+  - python3 $files
+
+
+  

@@ -1,0 +1,39 @@
+---
+version: 0.1
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+
+runson: mac
+
+autosplit: true
+retryOnFailure: true
+
+maxRetries: 1
+concurrency: 2
+
+env:
+#  PAT: ${{ .secrets.testKey }}
+ TARGET_OS: MacOS Catalina
+
+cacheKey: '{{ checksum "requirements.txt" }}'
+cacheDirectories:
+  - CacheDir
+pre:
+  - pip3 install -r requirements.txt --cache-dir CacheDir
+post:
+  - cat yaml/mac/pyunit_hyperexecute_autosplit_sample.yaml
+
+mergeArtifacts: true
+
+uploadArtefacts:
+  - name: TestReport
+    path:
+     - example_*/**
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: grep -nri 'HyperTestPyUnit' tests -ir --include=\*.py | sed 's/:.*//'
+
+testRunnerCommand: python3 $test

@@ -1,0 +1,47 @@
+version: "0.1"
+user: sudhirj
+key: Il7jaDN0DRW4a7RIE6Al1Fv1StFRW6LXfwgcw3h0HcoKWpAF47
+matrix: {files: [tests/browser.py, tests/api.py, tests/mobile.py, tests/ui.py]}
+testSuites: [python3 $files]
+pre: [pip3 install -r requirements.txt --cache-dir CacheDir]
+preDirectives:
+  commands: [pip3 install -r requirements.txt --cache-dir CacheDir]
+  maxRetries: 0
+  shell: ""
+  workingDirectory: ""
+postDirectives:
+  commands: []
+  shell: ""
+  workingDirectory: ""
+env:
+  TARGET_OS: Windows 11
+runson: win
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+cacheDirectories:
+- CacheDir
+cacheKey: '{{ checksum "requirements.txt" }}'
+retryOnFailure: true
+maxRetries: 1
+jobID: 79cc9332-21f3-42ff-8319-4576f9c53bbd
+codeDirectory: selenium-python
+framework:
+  name: ""
+  flags: []
+  discoveryFlags: []
+  discoveryType: ""
+  runnerFlags: []
+  workingDirectory: ""
+  isTestNGXMLSuite: false
+  defaultReports: true
+  additional_args: null
+  licenseKey: ""
+  userdefinediscovery: false
+cypress: false
+betaFeature:
+  setPartiallyCompletedAsCompleted: false
+combineTasksInMatrixMode: false
+captureScreenRecordingForScenarios: false
+maxRetriesPreSteps: 0
+triggerMode: false

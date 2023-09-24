@@ -1,0 +1,34 @@
+---
+version: 0.2
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+
+runson: android
+
+autosplit: true
+retryOnFailure: true
+
+maxRetries: 1
+concurrency: 2
+
+cacheKey: '{{ checksum "requirements.txt" }}'
+cacheDirectories:
+  - CacheDir
+pre:
+  - pip3 install -r requirements.txt --cache-dir CacheDir
+post:
+  - cat yaml/mac/pyunit_hyperexecute_autosplit_sample.yaml
+
+mergeArtifacts: true
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: grep -nri 'startingTest' tests -ir --include=\*.py | sed 's/:.*//' | uniq -d
+
+testRunnerCommand: python3 $test
+framework:
+  name: appium
+  args:
+    region: us 

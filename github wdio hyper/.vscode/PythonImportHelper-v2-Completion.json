@@ -1,0 +1,326 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "TestLoader",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "TestSuite",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "TestLoader",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "TestSuite",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "ActionChains",
+        "importPath": "selenium.webdriver.common.action_chains",
+        "description": "selenium.webdriver.common.action_chains",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.action_chains",
+        "documentation": {}
+    },
+    {
+        "label": "ActionChains",
+        "importPath": "selenium.webdriver.common.action_chains",
+        "description": "selenium.webdriver.common.action_chains",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.action_chains",
+        "documentation": {}
+    },
+    {
+        "label": "HtmlTestRunner",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "HtmlTestRunner",
+        "description": "HtmlTestRunner",
+        "detail": "HtmlTestRunner",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "KeysView",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Select",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "Keys",
+        "importPath": "selenium.webdriver.common.keys",
+        "description": "selenium.webdriver.common.keys",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.keys",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "appium",
+        "description": "appium",
+        "isExtraImport": true,
+        "detail": "appium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "appium.webdriver.common.mobileby",
+        "description": "appium.webdriver.common.mobileby",
+        "isExtraImport": true,
+        "detail": "appium.webdriver.common.mobileby",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "HyperTestPyUnitTest",
+        "kind": 6,
+        "importPath": "tests.api",
+        "description": "tests.api",
+        "peekOfCode": "class HyperTestPyUnitTest(unittest.TestCase):\n    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        desired_caps = {\n            \"build\": '[Python] [Test Scenario-1] HyperTest demo using PyUnit framework',\n            \"name\": '[Python] [Test Scenario-1] HyperTest demo using PyUnit framework',\n            \"platform\": os.environ.get(\"TARGET_OS\"),\n            \"browserName\": 'chrome',\n            \"version\": 'latest'",
+        "detail": "tests.api",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "kind": 5,
+        "importPath": "tests.api",
+        "description": "tests.api",
+        "peekOfCode": "username = os.environ.get(\"LT_USERNAME\")\naccess_key = os.environ.get(\"LT_ACCESS_KEY\")\n# Get the Present Working Directory since that is the place where the report\n# would be stored\ncurrent_directory = os.getcwd()\nclass HyperTestPyUnitTest(unittest.TestCase):\n    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        desired_caps = {",
+        "detail": "tests.api",
+        "documentation": {}
+    },
+    {
+        "label": "access_key",
+        "kind": 5,
+        "importPath": "tests.api",
+        "description": "tests.api",
+        "peekOfCode": "access_key = os.environ.get(\"LT_ACCESS_KEY\")\n# Get the Present Working Directory since that is the place where the report\n# would be stored\ncurrent_directory = os.getcwd()\nclass HyperTestPyUnitTest(unittest.TestCase):\n    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        desired_caps = {\n            \"build\": '[Python] [Test Scenario-1] HyperTest demo using PyUnit framework',",
+        "detail": "tests.api",
+        "documentation": {}
+    },
+    {
+        "label": "current_directory",
+        "kind": 5,
+        "importPath": "tests.api",
+        "description": "tests.api",
+        "peekOfCode": "current_directory = os.getcwd()\nclass HyperTestPyUnitTest(unittest.TestCase):\n    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        desired_caps = {\n            \"build\": '[Python] [Test Scenario-1] HyperTest demo using PyUnit framework',\n            \"name\": '[Python] [Test Scenario-1] HyperTest demo using PyUnit framework',\n            \"platform\": os.environ.get(\"TARGET_OS\"),\n            \"browserName\": 'chrome',",
+        "detail": "tests.api",
+        "documentation": {}
+    },
+    {
+        "label": "HyperTestPyUnitTest",
+        "kind": 6,
+        "importPath": "tests.browser",
+        "description": "tests.browser",
+        "peekOfCode": "class HyperTestPyUnitTest(unittest.TestCase):\n    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        today = datetime.date.today()\n        desired_caps = {\n            \"build\": 'Smoke_'+ str(today),\n            \"name\": 'Smoke_Test',\n            \"platform\": os.environ.get(\"TARGET_OS\"),\n            \"browserName\": 'chrome',",
+        "detail": "tests.browser",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "kind": 5,
+        "importPath": "tests.browser",
+        "description": "tests.browser",
+        "peekOfCode": "username = \"sudhirj\"\naccess_key = \"Il7jaDN0DRW4a7RIE6Al1Fv1StFRW6LXfwgcw3h0HcoKWpAF47\"\n# Get the Present Working Directory since that is the place where the report\n# would be stored\ncurrent_directory = os.getcwd()\nclass HyperTestPyUnitTest(unittest.TestCase):\n    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        today = datetime.date.today()",
+        "detail": "tests.browser",
+        "documentation": {}
+    },
+    {
+        "label": "access_key",
+        "kind": 5,
+        "importPath": "tests.browser",
+        "description": "tests.browser",
+        "peekOfCode": "access_key = \"Il7jaDN0DRW4a7RIE6Al1Fv1StFRW6LXfwgcw3h0HcoKWpAF47\"\n# Get the Present Working Directory since that is the place where the report\n# would be stored\ncurrent_directory = os.getcwd()\nclass HyperTestPyUnitTest(unittest.TestCase):\n    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        today = datetime.date.today()\n        desired_caps = {",
+        "detail": "tests.browser",
+        "documentation": {}
+    },
+    {
+        "label": "current_directory",
+        "kind": 5,
+        "importPath": "tests.browser",
+        "description": "tests.browser",
+        "peekOfCode": "current_directory = os.getcwd()\nclass HyperTestPyUnitTest(unittest.TestCase):\n    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        today = datetime.date.today()\n        desired_caps = {\n            \"build\": 'Smoke_'+ str(today),\n            \"name\": 'Smoke_Test',\n            \"platform\": os.environ.get(\"TARGET_OS\"),",
+        "detail": "tests.browser",
+        "documentation": {}
+    },
+    {
+        "label": "startingTest",
+        "kind": 2,
+        "importPath": "tests.mobile",
+        "description": "tests.mobile",
+        "peekOfCode": "def startingTest():\n    if os.environ.get(\"LT_USERNAME\") is None:\n        # Enter LT username here if environment variables have not been added\n        username = \"username\"\n    else:\n        username = os.environ.get(\"LT_USERNAME\")\n    if os.environ.get(\"LT_ACCESS_KEY\") is None:\n        # Enter LT accesskey here if environment variables have not been added\n        accesskey = \"accesskey\"\n    else:",
+        "detail": "tests.mobile",
+        "documentation": {}
+    },
+    {
+        "label": "desired_caps",
+        "kind": 5,
+        "importPath": "tests.mobile",
+        "description": "tests.mobile",
+        "peekOfCode": "desired_caps = {\n    \"deviceName\": \"Galaxy .*\",\n    \"platformName\": \"Android\",\n    \"platformVersion\": \"10\",\n    \"isRealMobile\": True,\n    \"build\": \"Python Vanilla Android\",\n    \"name\": \"Sample Test - Python\",\n    \"network\": False,\n    \"visual\": True,\n    \"video\": True",
+        "detail": "tests.mobile",
+        "documentation": {}
+    },
+    {
+        "label": "FirstSampleTest",
+        "kind": 6,
+        "importPath": "tests.ui",
+        "description": "tests.ui",
+        "peekOfCode": "class FirstSampleTest(unittest.TestCase):\n    # Generate capabilities from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        desired_caps = {\n            \"build\": 'Visual_Regression',  # Change your build name here\n            \"name\": 'Visual_Testing',  # Change your test name here\n            \"browserName\": 'Chrome',\n            \"version\": 'latest',\n            \"platform\": 'Windows 10',",
+        "detail": "tests.ui",
+        "documentation": {}
+    },
+    {
+        "label": "username",
+        "kind": 5,
+        "importPath": "tests.ui",
+        "description": "tests.ui",
+        "peekOfCode": "username = \"sudhirj\"  # Replace the username\naccess_key = \"Il7jaDN0DRW4a7RIE6Al1Fv1StFRW6LXfwgcw3h0HcoKWpAF47\"\nclass FirstSampleTest(unittest.TestCase):\n    # Generate capabilities from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        desired_caps = {\n            \"build\": 'Visual_Regression',  # Change your build name here\n            \"name\": 'Visual_Testing',  # Change your test name here\n            \"browserName\": 'Chrome',",
+        "detail": "tests.ui",
+        "documentation": {}
+    },
+    {
+        "label": "access_key",
+        "kind": 5,
+        "importPath": "tests.ui",
+        "description": "tests.ui",
+        "peekOfCode": "access_key = \"Il7jaDN0DRW4a7RIE6Al1Fv1StFRW6LXfwgcw3h0HcoKWpAF47\"\nclass FirstSampleTest(unittest.TestCase):\n    # Generate capabilities from here: https://www.lambdatest.com/capabilities-generator/\n    # setUp runs before each test case and\n    def setUp(self):\n        desired_caps = {\n            \"build\": 'Visual_Regression',  # Change your build name here\n            \"name\": 'Visual_Testing',  # Change your test name here\n            \"browserName\": 'Chrome',\n            \"version\": 'latest',",
+        "detail": "tests.ui",
+        "documentation": {}
+    }
+]
