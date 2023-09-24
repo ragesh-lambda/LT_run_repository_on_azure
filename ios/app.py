@@ -34,8 +34,8 @@ def read_credentials_from_csv(file_path):
 url = "https://manual-api.lambdatest.com/app/upload/realDevice"
 
 # Rest of your code remains the same from here onwards...
-file_path = "C:/Users/ritamg/Downloads/areenadevapk-1694741121319.apk"
-app_name = "appname"
+file_path = "Flashlight 100Kb (No Ads)_1_Apkpure.apk"
+app_name = "ios_upload"
 
 # Create a dictionary for the form data
 data = {
