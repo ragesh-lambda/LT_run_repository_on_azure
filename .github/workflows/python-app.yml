@@ -18,11 +18,18 @@ jobs:
         # Download and install Python 3.11.4
         curl -sSL https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe -o python-3.11.4-amd64.exe
         Start-Process -Wait -FilePath .\python-3.11.4-amd64.exe -ArgumentList '/quiet InstallAllUsers=1 PrependPath=1'
+    - name: Set up Python environment
+      run: |
+        python -m venv venv
+        source venv/Scripts/activate
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
         python --version
-   
+    - name: Test with pytest
+      run: |
+        pytest
