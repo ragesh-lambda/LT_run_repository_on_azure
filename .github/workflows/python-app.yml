@@ -20,9 +20,9 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install selenium
-          pip install webdriver_manager
-          pip install pytest
+          pip install selenium==3.141.0
+          pip install webdriver_manager==3.8.6
+          pip install pytest==6.2.5
 
       - name: Run Selenium Test
         run: |
