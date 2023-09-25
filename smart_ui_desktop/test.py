@@ -46,7 +46,7 @@ class MyTestCase(unittest.TestCase):
                 }
 
                 # Create the WebDriver instance
-                self.driver = webdriver.Remote(command_executor="https://{}:{}@hub.lambdatest.com/wd/hub".format(username, accesskey),desired_capabilities=desired_caps)
+                self.driver = webdriver.Remote(command_executor="https://{}:{}@hub.lambdatest.com/wd/hub".format(username, accesskey),desired_capabilities=desired_caps,timeout=12000)
 
     def test_example(self):
         # Your test code here
