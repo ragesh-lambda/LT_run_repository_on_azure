@@ -14,6 +14,7 @@ import pytest
 import csv
 from datetime import datetime
 import csv
+import selenium
 
 def run_automation_script(row):
     username = row[0]
@@ -25,15 +26,16 @@ def run_automation_script(row):
     options = SafariOptions()
     options.browser_version = "17.0"
     options.platform_name = "macOS Sonoma"
-    lt_options = {};
-    lt_options["username"] = "shubhamr";
-    lt_options["accessKey"] = "dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh";
-    lt_options["project"] = "Selenium Sample Test Mac";
-    lt_options["name"] = f"Selenium Test - {current_date}";
+    lt_options = {}
+    lt_options["username"] = "shubhamr"
+    lt_options["accessKey"] = "dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh"
+    lt_options["project"] = "Selenium Sample Test Mac"
+    lt_options["name"] = f"Selenium Test - {current_date}"
     lt_options["build"] = "Selenium Sample Test Mac";
     lt_options["platformName"]="macOS Sonoma"
-    lt_options["w3c"] = True;
-    options.set_capability('LT:Options', lt_options);
+    lt_options["w3c"] = True
+    options.set_capability('LT:Options', lt_options)
+    options.set_capability('LT:Options', lt_options)
     url = "https://"+username+":"+accesskey+"@"+gridUrl
     driver = webdriver.Remote(
             command_executor=url,
@@ -64,5 +66,6 @@ with open(filename, newline="") as csvfile:
             
 
 print("finished")
+print(selenium.__version__)
 
 
