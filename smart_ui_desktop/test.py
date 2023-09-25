@@ -49,7 +49,7 @@ class MyTestCase(unittest.TestCase):
                 self.driver = webdriver.Remote(
                     command_executor="https://{}:{}@hub.lambdatest.com/wd/hub".format(
                         username, accesskey),
-                    desired_capabilities={"LT:Options": desired_caps})
+                    desired_capabilities=desired_caps)
 
     def test_example(self):
         # Your test code here
