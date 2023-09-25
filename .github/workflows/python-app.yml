@@ -1,28 +1,31 @@
-name: Selenium Tests
+name: Selenium Test
 
 on:
   push:
     branches:
-      - main # Change this to your main branch name
+      - main  # Change this to your main branch name
 
 jobs:
-  selenium_tests:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.11 # You can change the Python version if needed
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11.4  # Use the desired Python version
 
-    - name: Install dependencies
-      run: |
-        cd smart_ui_desktop
-        pip install selenium==3.141.0
-        pip install pytest==6.2.4
-        python test.py
+      - name: Install Dependencies
+        run: |
+          pip install selenium
+          pip install webdriver_manager
+          pip install pytest
 
-    
+      - name: Run Selenium Test
+        run: |
+          cd smart_ui_desktop
+          python test.py  # Replace with the actual filename
+        
