@@ -4,6 +4,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilitie
 import pytest
 from selenium import webdriver
 import time
