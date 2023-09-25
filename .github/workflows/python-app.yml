@@ -1,35 +1,28 @@
-name: Python application
+name: Selenium Tests
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main # Change this to your main branch name
 
 jobs:
-  build:
-
-    runs-on: windows-latest
+  selenium_tests:
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.11.4
-      run: |
-        # Download and install Python 3.11.4
-        curl -sSL https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe -o python-3.11.4-amd64.exe
-        Start-Process -Wait -FilePath .\python-3.11.4-amd64.exe -ArgumentList '/quiet InstallAllUsers=1 PrependPath=1'
-    - name: Set up Python environment
-      run: |
-        python -m venv venv
-        source venv/Scripts/activate
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11 # You can change the Python version if needed
+
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Lint with flake8
-      run: |
-        python --version
-    - name: Test with pytest
-      run: |
-        pytest
+        cd smart_ui_desktop
+        pip install selenium==3.141.0
+        pip install pytest
+        python test.py
+
+    
