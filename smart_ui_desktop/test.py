@@ -25,7 +25,9 @@ class MyTestCase(unittest.TestCase):
                     "resolution": '1024x768',
                     "network": 'true',
                     "smartUI.project": "Smart UI Testing 125",
-                    "smartUI.build": "buildName"+current_datetime
+                    "smartUI.build": "buildName"+current_datetime,
+                    "pageLoadTimeout": 30000,  # 30 seconds
+                    "scriptTimeout": 300000 # 30 seconds
                 }
 
                 errorColor = {
@@ -46,7 +48,7 @@ class MyTestCase(unittest.TestCase):
                 }
 
                 # Create the WebDriver instance
-                self.driver = webdriver.Remote(command_executor="https://{}:{}@hub.lambdatest.com/wd/hub".format(username, accesskey),desired_capabilities=desired_caps,timeout=12000)
+                self.driver = webdriver.Remote(command_executor="https://{}:{}@hub.lambdatest.com/wd/hub".format(username, accesskey),desired_capabilities=desired_caps)
 
     def test_example(self):
         # Your test code here
