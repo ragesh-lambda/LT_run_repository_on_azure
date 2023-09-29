@@ -17,7 +17,7 @@ steps:
 
 - script: |
     cd sample_selenium_win
-    pip install selenium==3.14.0
+    pip install selenium
     pip install pytest
     python index2.py
   displayName: 'Run Selenium Script'
