@@ -6,8 +6,6 @@ pool:
 
 strategy:
   matrix:
-    Python37:
-      python.version: '3.7'
     Python311:
       python.version: '3.11'
 
@@ -18,7 +16,8 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    cd Sample_Selenium
+    cd sample_selenium_win
     pip install selenium==3.14.0
+    pip install pytest
     python index2.py
   displayName: 'Run Selenium Script'
